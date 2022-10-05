@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { useState } from 'react'
 import { getReminders } from '../services/reminders';
 import jwt from 'jsonwebtoken';
 import Plus from '../components/Plus';
@@ -33,7 +32,7 @@ export default function Home({ reminders }) {
             <p>{reminder.done ? "Fet" : "Pendent"}</p>
           </div>
         ))}
-        <a className='font-bold flex fixed right-0 bottom-0 m-8 bg-blue-300 p-4 rounded-xl' href="/new"><Plus />Afegir</a>
+        <Link className='font-bold flex fixed right-0 bottom-0 m-8 bg-blue-300 p-4 rounded-xl' href="/new"><Plus />Afegir</Link>
 
       </main>
 
