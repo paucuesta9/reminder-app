@@ -32,7 +32,7 @@ export default function Home({ reminders }) {
             <p>{reminder.done ? "Fet" : "Pendent"}</p>
           </div>
         ))}
-        <Link className='font-bold flex fixed right-0 bottom-0 m-8 bg-blue-300 p-4 rounded-xl' href="/new"><Plus />Afegir</Link>
+        <Link className='font-bold flex fixed right-0 bottom-0 m-8 bg-blue-300 p-4 rounded-xl' href="/new"><div><Plus /> Afegir</div></Link>
 
       </main>
 
